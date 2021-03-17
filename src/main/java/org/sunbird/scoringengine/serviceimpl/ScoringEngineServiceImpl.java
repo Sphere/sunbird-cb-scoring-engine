@@ -21,8 +21,6 @@ import org.sunbird.scoringengine.exception.BadRequestException;
 import org.sunbird.scoringengine.models.EvaluatorModel;
 import org.sunbird.scoringengine.models.PropertyFilterMixIn;
 import org.sunbird.scoringengine.models.Response;
-import org.sunbird.scoringengine.repository.cassandra.bodhi.ScoreCriteriaRepository;
-import org.sunbird.scoringengine.repository.cassandra.bodhi.ScoreQualifierRepository;
 import org.sunbird.scoringengine.schema.model.ScoringTemplate;
 import org.sunbird.scoringengine.service.ScoringEngineService;
 import org.sunbird.scoringengine.util.ComputeScores;
@@ -39,12 +37,6 @@ public class ScoringEngineServiceImpl implements ScoringEngineService {
 
 	@Autowired
 	private ScoringSchemaLoader schemaLoader;
-
-	@Autowired
-	ScoreCriteriaRepository scoreCriteriaRepository;
-
-	@Autowired
-	ScoreQualifierRepository scoreQualifierRepository;
 
 	@Autowired
 	IndexerService indexerService;
@@ -70,25 +62,25 @@ public class ScoringEngineServiceImpl implements ScoringEngineService {
 	@Override
 	public Response addV2(EvaluatorModel evaluatorModel) throws Exception{
 		Response response = new Response();
-		try{
-
-			// doComputations of all fields
-			ComputeScores computeScores = new ComputeScores(scoreCriteriaRepository, scoreQualifierRepository);
-			computeScores.compute(evaluatorModel);
-			logger.info("evaluatorModel : {}",mapper.writeValueAsString(evaluatorModel));
-
-			// post the data into ES index
-			Map<String, Object> indexDocument = mapper.convertValue(evaluatorModel, new TypeReference<Map<String, Object>>() {});
-			RestStatus status = indexerService.addEntity(esIndex, esIndexType, evaluatorModel.getIdentifier(), indexDocument);
-
-			response.put("status", status);
-			response.put("id", evaluatorModel.getIdentifier());
-			response.put("Message", "Successfully operation");
-
-		} catch (Exception e){
-			e.printStackTrace();
-			throw new Exception(e);
-		}
+//		try{
+//
+//			// doComputations of all fields
+//			ComputeScores computeScores = new ComputeScores(scoreCriteriaRepository, scoreQualifierRepository);
+//			computeScores.compute(evaluatorModel);
+//			logger.info("evaluatorModel : {}",mapper.writeValueAsString(evaluatorModel));
+//
+//			// post the data into ES index
+//			Map<String, Object> indexDocument = mapper.convertValue(evaluatorModel, new TypeReference<Map<String, Object>>() {});
+//			RestStatus status = indexerService.addEntity(esIndex, esIndexType, evaluatorModel.getIdentifier(), indexDocument);
+//
+//			response.put("status", status);
+//			response.put("id", evaluatorModel.getIdentifier());
+//			response.put("Message", "Successfully operation");
+//
+//		} catch (Exception e){
+//			e.printStackTrace();
+//			throw new Exception(e);
+//		}
 
 		return response;
 	}
@@ -175,6 +167,5 @@ public class ScoringEngineServiceImpl implements ScoringEngineService {
 		response.put("resources", HttpStatus.OK);
 		return response;
 	}
-
 
 }
