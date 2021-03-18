@@ -61,32 +61,6 @@ public class ScoringEngineServiceImpl implements ScoringEngineService {
 	private static final String[] ignorableFields = {"rootOrg", "org", "version", "weightage", "max_score", "min_acceptable_score", "fixed_score", "range_score", "modify_max_score", "10-20", "20-30", "30-40", "modify_max_score", "max_score_modify_value", "min_score_weightage_enable", "min_score_weightage", "score_grades", "isQualifiedMinCriteria", "status_on_min_criteria"};
 
 	@Override
-	public Response addV2(EvaluatorModel evaluatorModel) throws Exception{
-		Response response = new Response();
-//		try{
-//
-//			// doComputations of all fields
-//			ComputeScores computeScores = new ComputeScores(scoreCriteriaRepository, scoreQualifierRepository);
-//			computeScores.compute(evaluatorModel);
-//			logger.info("evaluatorModel : {}",mapper.writeValueAsString(evaluatorModel));
-//
-//			// post the data into ES index
-//			Map<String, Object> indexDocument = mapper.convertValue(evaluatorModel, new TypeReference<Map<String, Object>>() {});
-//			RestStatus status = indexerService.addEntity(esIndex, esIndexType, evaluatorModel.getIdentifier(), indexDocument);
-//
-//			response.put("status", status);
-//			response.put("id", evaluatorModel.getIdentifier());
-//			response.put("Message", "Successfully operation");
-//
-//		} catch (Exception e){
-//			e.printStackTrace();
-//			throw new Exception(e);
-//		}
-
-		return response;
-	}
-
-	@Override
 	public Response addV3(EvaluatorModel evaluatorModel) throws Exception {
 		Response response = new Response();
 		try {
