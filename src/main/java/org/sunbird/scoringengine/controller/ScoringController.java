@@ -23,7 +23,6 @@ public class ScoringController {
                                         @RequestHeader String org) throws Exception {
         evaluatorModel.setRootOrg(rootOrg);
         evaluatorModel.setOrg(org);
-        System.out.println("request : "+new ObjectMapper().writeValueAsString(evaluatorModel));
         return new ResponseEntity<>(scoringEngineService.addV3(evaluatorModel), HttpStatus.OK);
     }
 
@@ -32,7 +31,6 @@ public class ScoringController {
                                            @RequestHeader String org) throws Exception {
         evaluatorModel.setRootOrg(rootOrg);
         evaluatorModel.setOrg(org);
-        System.out.println("request : "+new ObjectMapper().writeValueAsString(evaluatorModel));
         return new ResponseEntity<>(scoringEngineService.searchV2(evaluatorModel), HttpStatus.OK);
     }
 

@@ -30,6 +30,7 @@ import org.sunbird.scoringengine.util.ScoringSchemaLoader;
 import java.text.SimpleDateFormat;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Optional;
 
 @Service
 public class ScoringEngineServiceImpl implements ScoringEngineService {
@@ -54,7 +55,7 @@ public class ScoringEngineServiceImpl implements ScoringEngineService {
 	@Value("${es.scoring.enabled}")
 	private boolean esScoringEnabled;
 	
-	public static SimpleDateFormat formatterDateTime = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+	public SimpleDateFormat formatterDateTime = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 	private Logger logger = LoggerFactory.getLogger(ScoringEngineServiceImpl.class);
 
 	private static final String[] ignorableFields = {"rootOrg", "org", "version", "weightage", "max_score", "min_acceptable_score", "fixed_score", "range_score", "modify_max_score", "10-20", "20-30", "30-40", "modify_max_score", "max_score_modify_value", "min_score_weightage_enable", "min_score_weightage", "score_grades", "isQualifiedMinCriteria", "status_on_min_criteria"};
@@ -92,7 +93,12 @@ public class ScoringEngineServiceImpl implements ScoringEngineService {
 			String templateId = (evaluatorModel.getTemplateId() == null || evaluatorModel.getTemplateId().isEmpty()) == true ? scoringTemplateId
 			: evaluatorModel.getTemplateId();
 
-			ScoringTemplate scoringTemplate = schemaLoader.getScoringSchema().getScoringTemplates().stream().filter(t -> t.getTemplate_id().equals(templateId)).findFirst().get();
+			Optional<ScoringTemplate> scoringTemplateOptional = schemaLoader.getScoringSchema().getScoringTemplates().stream().filter(t -> t.getTemplate_id().equals(templateId)).findFirst();
+
+			if(!scoringTemplateOptional.isPresent())
+				throw new BadRequestException("Template is not found on given template id");
+			ScoringTemplate scoringTemplate = scoringTemplateOptional.get();
+			
 			ComputeScores computeScores = new ComputeScores(scoringTemplate);
 			computeScores.computeV2(evaluatorModel);
 			logger.info("evaluatorModel : {}", mapper.writeValueAsString(evaluatorModel));
@@ -157,7 +163,10 @@ public class ScoringEngineServiceImpl implements ScoringEngineService {
 		if (StringUtils.isEmpty(templateId)) {
 			throw new BadRequestException("Template Id is required!");
 		}
-		ScoringTemplate scoringTemplate = schemaLoader.getScoringSchema().getScoringTemplates().stream().filter(t -> t.getTemplate_id().equals(templateId)).findFirst().get();
+		Optional<ScoringTemplate> scoringTemplateOptional = schemaLoader.getScoringSchema().getScoringTemplates().stream().filter(t -> t.getTemplate_id().equals(templateId)).findFirst();
+		if(!scoringTemplateOptional.isPresent())
+			throw new BadRequestException("Template is not found on given template id");
+		ScoringTemplate scoringTemplate = scoringTemplateOptional.get();
 		ObjectMapper mapper = new ObjectMapper();
 		mapper.addMixIn(Object.class, PropertyFilterMixIn.class);
 		FilterProvider filters = new SimpleFilterProvider().addFilter("filter properties by name",SimpleBeanPropertyFilter.serializeAllExcept(ignorableFields));

@@ -90,6 +90,8 @@ public class IndexerService {
         } catch (IOException e) {
             logger.error("Exception in adding record to ElasticSearch", e);
         }
+        if(null == response)
+        	return null;
         return response.status();
     }
 
@@ -145,6 +147,8 @@ public class IndexerService {
         } catch (IOException e) {
             logger.error("Exception in updating a record to ElasticSearch", e);
         }
+        if(null == response)
+        	return null;
         return response.status();
     }
 

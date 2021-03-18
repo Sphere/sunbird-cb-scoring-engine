@@ -25,7 +25,7 @@ public class ComputeScores {
     private Logger logger = LoggerFactory.getLogger(ComputeScores.class);
     private ObjectMapper mapper = new ObjectMapper();
 
-    private static SimpleDateFormat formatterDateTime = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+    private SimpleDateFormat formatterDateTime = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
     private static String identifierPrefix = "lex_score_";
 
     private ScoringTemplate scoringTemplate;
@@ -87,14 +87,14 @@ public class ComputeScores {
 
                 }
 
-                if (Boolean.TRUE == qualifierMap.get(qm.getName()).getModify_max_score() &&
+                if (Boolean.TRUE.equals(qualifierMap.get(qm.getName()).getModify_max_score()) &&
                         qualifierMap.get(qm.getName()).getMax_score_modify_value().containsKey(qm.getEvaluated())) {
                     maxScoreExcludedValue += qualifierMap.get(qm.getName()).getMax_score_modify_value().get(qm.getEvaluated());
                 }
                 qm.setDescription(qualifierMap.get(qm.getName()).getDescription());
             }
             cm.setMaxScore(cm.getMaxScore() - maxScoreExcludedValue);
-            if (Boolean.TRUE == criteria.getMin_score_weightage_enable()) {
+            if (Boolean.TRUE.equals(criteria.getMin_score_weightage_enable())) {
                 cm.setMinScore(cm.getMaxScore() * criteria.getMin_score_weightage());
             }
             List<Double> scoreVals = cm.getQualifiers().stream().map(q -> q.getScoreValue()).collect(Collectors.toList());
