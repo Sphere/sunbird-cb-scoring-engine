@@ -98,7 +98,7 @@
           "qualifiers": [
             {
               "qualifier": "Mandatory_Requirement_001",
-              "description": "‘The content does not contain hate speech, abuse, violence and profanity.",
+              "description": "The content does not contain hate speech, abuse, violence and profanity.",
               "weightage": 0,
               "max_score": 0,
               "min_acceptable_score": 0,
@@ -176,7 +176,7 @@
             },
             {
               "qualifier": "Mandatory_Requirement_004",
-              "description": "‘The content is appropriate for all users on the platform and do not hurt sentiments of any race, caste, religion or gender.",
+              "description": "The content is appropriate for all users on the platform and do not hurt sentiments of any race, caste, religion or gender.",
               "weightage": 0,
               "max_score": 0,
               "min_acceptable_score": 0,
@@ -228,7 +228,7 @@
             },
             {
               "qualifier": "Mandatory_Requirement_006",
-              "description": "‘The content does not contain any copyright violation.",
+              "description": "The content does not contain any copyright violation.",
               "weightage": 0,
               "max_score": 0,
               "min_acceptable_score": 0,
