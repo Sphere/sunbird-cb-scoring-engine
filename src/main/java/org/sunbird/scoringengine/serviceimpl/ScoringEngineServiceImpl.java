@@ -77,8 +77,6 @@ public class ScoringEngineServiceImpl implements ScoringEngineService {
 			
 			ComputeScores computeScores = new ComputeScores(scoringTemplate);
 			computeScores.computeV2(evaluatorModel);
-			logger.info("evaluatorModel : {}", mapper.writeValueAsString(evaluatorModel));
-
 			// post the data into ES index
 			if (esScoringEnabled && !evaluatorModel.isGateCriteriaCheck()) {
 				Map<String, Object> indexDocument = mapper.convertValue(evaluatorModel, new TypeReference<Map<String, Object>>() {
@@ -105,10 +103,6 @@ public class ScoringEngineServiceImpl implements ScoringEngineService {
 	public Response searchV2(EvaluatorModel evaluatorModel) throws Exception{
 		Response response = new Response();
 		try{
-
-			//request all fields
-			logger.info("evaluatorModel : {}",mapper.writeValueAsString(evaluatorModel));
-
 			if ((null == evaluatorModel.getUserId() || evaluatorModel.getUserId().isEmpty()) && (null == evaluatorModel.getResourceId() || evaluatorModel.getResourceId().isEmpty())) {
 				throw new BadRequestException("Required fields, userId or resourceId is not valid ");
 			}

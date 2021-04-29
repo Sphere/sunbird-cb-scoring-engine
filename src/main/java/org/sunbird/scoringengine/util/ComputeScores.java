@@ -57,7 +57,6 @@ public class ComputeScores {
             evaluatorModel.setOrg(scoringTemplate.getOrg());
             //EvaluationCriteria criteria = scoreCriteriaRepository.findCriteriaByName(evaluatorModel.getRootOrg(), evaluatorModel.getOrg(), cm.getCriteria());
 
-            logger.info("EvaluationCriteria: ", mapper.writeValueAsString(criteria));
             double maxScore = criteria.getMax_score();
             cm.setMaxScore(maxScore);
             double minScore = criteria.getMin_acceptable_score();
