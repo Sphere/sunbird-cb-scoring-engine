@@ -43,6 +43,10 @@ public class EvaluatorModel {
 
     private boolean isQualifiedMinCriteria = true;
 
+    private boolean gateCriteriaCheck;
+
+    private boolean isQualified = true;
+
     @Size(min = 1)
     private List<CriteriaModel> criteriaModels = new ArrayList<>();
 
@@ -222,5 +226,21 @@ public class EvaluatorModel {
 
     public void setQualifiedMinCriteria(boolean qualifiedMinCriteria) {
         isQualifiedMinCriteria = qualifiedMinCriteria;
+    }
+
+    public boolean isGateCriteriaCheck() {
+        return gateCriteriaCheck;
+    }
+
+    public void setGateCriteriaCheck(boolean gateCriteriaCheck) {
+        this.gateCriteriaCheck = gateCriteriaCheck;
+    }
+
+    public boolean isQualified() {
+        return isQualified;
+    }
+
+    public void setQualified(boolean qualified) {
+        isQualified = qualified;
     }
 }

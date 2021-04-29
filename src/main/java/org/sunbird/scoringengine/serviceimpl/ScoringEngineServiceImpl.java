@@ -58,7 +58,9 @@ public class ScoringEngineServiceImpl implements ScoringEngineService {
 	public SimpleDateFormat formatterDateTime = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 	private Logger logger = LoggerFactory.getLogger(ScoringEngineServiceImpl.class);
 
-	private static final String[] ignorableFields = {"rootOrg", "org", "version", "weightage", "max_score", "min_acceptable_score", "fixed_score", "range_score", "modify_max_score", "10-20", "20-30", "30-40", "modify_max_score", "max_score_modify_value", "min_score_weightage_enable", "min_score_weightage", "score_grades", "isQualifiedMinCriteria", "status_on_min_criteria"};
+	private static final String[] ignorableFields = {"rootOrg", "org", "version", "weightage", "max_score", "min_acceptable_score",
+			"fixed_score", "range_score", "modify_max_score", "10-20", "20-30", "30-40", "modify_max_score", "max_score_modify_value",
+			"min_score_weightage_enable", "min_score_weightage", "score_grades", "isQualifiedMinCriteria", "status_on_min_criteria", "disqualifyOption"};
 
 	@Override
 	public Response addV3(EvaluatorModel evaluatorModel) throws Exception {
@@ -78,7 +80,7 @@ public class ScoringEngineServiceImpl implements ScoringEngineService {
 			logger.info("evaluatorModel : {}", mapper.writeValueAsString(evaluatorModel));
 
 			// post the data into ES index
-			if (esScoringEnabled) {
+			if (esScoringEnabled && !evaluatorModel.isGateCriteriaCheck()) {
 				Map<String, Object> indexDocument = mapper.convertValue(evaluatorModel, new TypeReference<Map<String, Object>>() {
 				});
 				RestStatus status = indexerService.addEntity(esIndex, esIndexType, evaluatorModel.getIdentifier(), indexDocument);

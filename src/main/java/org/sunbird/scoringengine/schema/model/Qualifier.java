@@ -26,6 +26,8 @@ public class Qualifier {
 
     private List<HashMap<String, Object>> options = new ArrayList<>();
 
+    private List<String> disqualifyOption = new ArrayList<>();
+
     public String getQualifier() {
         return qualifier;
     }
@@ -104,5 +106,13 @@ public class Qualifier {
 
     public void setOptions(List<HashMap<String, Object>> options) {
         this.options = options;
+    }
+
+    public List<String> getDisqualifyOption() {
+        return disqualifyOption;
+    }
+
+    public void setDisqualifyOption(List<String> disqualifyOption) {
+        this.disqualifyOption = disqualifyOption;
     }
 }

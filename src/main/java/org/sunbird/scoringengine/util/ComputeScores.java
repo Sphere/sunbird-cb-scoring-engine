@@ -4,6 +4,7 @@ package org.sunbird.scoringengine.util;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.util.CollectionUtils;
 import org.sunbird.scoringengine.models.CriteriaModel;
 import org.sunbird.scoringengine.models.EvaluatorModel;
 import org.sunbird.scoringengine.models.QualifierModel;
@@ -92,6 +93,10 @@ public class ComputeScores {
                     maxScoreExcludedValue += qualifierMap.get(qm.getName()).getMax_score_modify_value().get(qm.getEvaluated());
                 }
                 qm.setDescription(qualifierMap.get(qm.getName()).getDescription());
+                if (evaluatorModel.isQualified() && !CollectionUtils.isEmpty(qualifierMap.get(qm.getName()).getDisqualifyOption())
+                        && qualifierMap.get(qm.getName()).getDisqualifyOption().contains(qm.getEvaluated())) {
+                    evaluatorModel.setQualified(false);
+                }
             }
             cm.setMaxScore(cm.getMaxScore() - maxScoreExcludedValue);
             if (Boolean.TRUE.equals(criteria.getMin_score_weightage_enable())) {
