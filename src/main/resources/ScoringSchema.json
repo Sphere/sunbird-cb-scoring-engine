@@ -1321,7 +1321,7 @@
             },
             {
               "qualifier": "Instructional_Methods_011",
-              "description": "There is at least one active learning activity- such as online discussion/ debate, group project, synchronous online meeting, case study or a learning game- per course.",
+              "description": "There is at least one active learning activity - such as online discussion/ debate, group project, synchronous online meeting, case study or a learning game - per course.",
               "weightage": 0.13,
               "max_score": 5,
               "min_acceptable_score": 2.5,
@@ -2223,7 +2223,7 @@
         },
         {
           "criteria": "Diversity & Inclusion",
-          "description": "his section evaluates the diversity and inclusion component of the course – including how the course uses language and media elements that are inclusive and feature diversity in gender, race and religion and if the course is accessible to differently-abled learners. Please mark yes if the statement is true for your content.",
+          "description": "This section evaluates the diversity and inclusion component of the course – including how the course uses language and media elements that are inclusive and feature diversity in gender, race and religion, and if the course is accessible to differently-abled learners. Please mark yes if the statement is true for your content.",
           "weightage": 0.15,
           "max_score": 100,
           "min_acceptable_score": 0,
@@ -2936,7 +2936,7 @@
             },
             {
               "qualifier": "Diversity_Inclusion_017",
-              "description": "The course provides adequate information to carry out administrative decisions to enhance women’s safety and violence prevention",
+              "description": "The course provides adequate information to carry out administrative decisions to enhance women’s safety and violence prevention.",
               "weightage": 0.5,
               "max_score": 5,
               "min_acceptable_score": 2.5,
@@ -3114,7 +3114,7 @@
         },
         {
           "criteria": "Learner Support",
-          "description": "his section evaluates the resources included with the course, to see if they extend learning and enhance the asynchronous learning experience. Please mark yes if the statement is true for your content.",
+          "description": "This section evaluates the resources included with the course, to see if they extend learning and enhance the asynchronous learning experience. Please mark yes if the statement is true for your content.",
           "weightage": 0.05,
           "max_score": 25,
           "min_acceptable_score": 0,
