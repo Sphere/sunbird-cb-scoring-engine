@@ -90,21 +90,21 @@
       "min_acceptable_score": 0,
       "criteria": [
         {
-          "criteria": "Mandatory Requirement",
-          "description": "Mandatory Requirement Description",
+          "criteria": "Mandatory Requirements",
+          "description": "All the requirements mentioned in this section are necessary to be followed. Not meeting any of these requirements would lead to disqualification of the course. Please mark yes if the statement is true for your content.",
           "weightage": 0,
           "max_score": 0,
           "min_acceptable_score": 0,
           "qualifiers": [
             {
               "qualifier": "Mandatory_Requirement_001",
-              "description": "Content does not contain hate speech, abuse, violence and profanity.",
+              "description": "The content does not contain hate speech, abuse, violence and profanity.",
               "weightage": 0,
               "max_score": 0,
               "min_acceptable_score": 0,
               "fixed_score": {
                 "Yes": 0,
-                "Not Applicable": 0
+                "No": 0
               },
               "range_score": {
                 "10-20": {
@@ -118,8 +118,11 @@
                   "name": "Yes"
                 },
                 {
-                  "name": "Not Applicable"
+                  "name": "No"
                 }
+              ],
+              "disqualifyOption": [
+                "No"
               ]
             },
             {
@@ -130,7 +133,7 @@
               "min_acceptable_score": 0,
               "fixed_score": {
                 "Yes": 0,
-                "Not Applicable": 0
+                "No": 0
               },
               "range_score": {
                 "10-20": {
@@ -144,8 +147,11 @@
                   "name": "Yes"
                 },
                 {
-                  "name": "Not Applicable"
+                  "name": "No"
                 }
+              ],
+              "disqualifyOption": [
+                "No"
               ]
             },
             {
@@ -156,7 +162,7 @@
               "min_acceptable_score": 0,
               "fixed_score": {
                 "Yes": 0,
-                "Not Applicable": 0
+                "No": 0
               },
               "range_score": {
                 "10-20": {
@@ -170,19 +176,22 @@
                   "name": "Yes"
                 },
                 {
-                  "name": "Not Applicable"
+                  "name": "No"
                 }
+              ],
+              "disqualifyOption": [
+                "No"
               ]
             },
             {
               "qualifier": "Mandatory_Requirement_004",
-              "description": "Content is appropriate for all users on the platform and do not hurt sentiments of any race, caste, religion or gender.",
+              "description": "The content is appropriate for all users on the platform and does not hurt sentiments of any race, caste, religion or gender.",
               "weightage": 0,
               "max_score": 0,
               "min_acceptable_score": 0,
               "fixed_score": {
                 "Yes": 0,
-                "Not Applicable": 0
+                "No": 0
               },
               "range_score": {
                 "10-20": {
@@ -196,8 +205,11 @@
                   "name": "Yes"
                 },
                 {
-                  "name": "Not Applicable"
+                  "name": "No"
                 }
+              ],
+              "disqualifyOption": [
+                "No"
               ]
             },
             {
@@ -208,6 +220,7 @@
               "min_acceptable_score": 0,
               "fixed_score": {
                 "Yes": 0,
+                "No": 0,
                 "Not Applicable": 0
               },
               "range_score": {
@@ -222,19 +235,25 @@
                   "name": "Yes"
                 },
                 {
+                  "name": "No"
+                },
+                {
                   "name": "Not Applicable"
                 }
+              ],
+              "disqualifyOption": [
+                "No"
               ]
             },
             {
               "qualifier": "Mandatory_Requirement_006",
-              "description": "Content does not contain any copyright violation.",
+              "description": "The content does not contain any copyright violation.",
               "weightage": 0,
               "max_score": 0,
               "min_acceptable_score": 0,
               "fixed_score": {
                 "Yes": 0,
-                "Not Applicable": 0
+                "No": 0
               },
               "range_score": {
                 "10-20": {
@@ -248,19 +267,22 @@
                   "name": "Yes"
                 },
                 {
-                  "name": "Not Applicable"
+                  "name": "No"
                 }
+              ],
+              "disqualifyOption": [
+                "No"
               ]
             },
             {
               "qualifier": "Mandatory_Requirement_007",
-              "description": "Content is devoid of plagiarism and a plagiarism certificate is attached with this documentatio.",
+              "description": "The content is devoid of plagiarism and a plagiarism certificate is attached with this documentation.",
               "weightage": 0,
               "max_score": 0,
               "min_acceptable_score": 0,
               "fixed_score": {
                 "Yes": 0,
-                "Not Applicable": 0
+                "No": 0
               },
               "range_score": {
                 "10-20": {
@@ -274,8 +296,11 @@
                   "name": "Yes"
                 },
                 {
-                  "name": "Not Applicable"
+                  "name": "No"
                 }
+              ],
+              "disqualifyOption": [
+                "No"
               ]
             },
             {
@@ -286,7 +311,7 @@
               "min_acceptable_score": 0,
               "fixed_score": {
                 "Yes": 0,
-                "Not Applicable": 0
+                "No": 0
               },
               "range_score": {
                 "10-20": {
@@ -300,8 +325,11 @@
                   "name": "Yes"
                 },
                 {
-                  "name": "Not Applicable"
+                  "name": "No"
                 }
+              ],
+              "disqualifyOption": [
+                "No"
               ]
             },
             {
@@ -312,7 +340,7 @@
               "min_acceptable_score": 0,
               "fixed_score": {
                 "Yes": 0,
-                "Not Applicable": 0
+                "No": 0
               },
               "range_score": {
                 "10-20": {
@@ -326,27 +354,31 @@
                   "name": "Yes"
                 },
                 {
-                  "name": "Not Applicable"
+                  "name": "No"
                 }
+              ],
+              "disqualifyOption": [
+                "No"
               ]
             }
           ]
         },
         {
           "criteria": "Sustainable Development",
-          "description": "Sustainable Development Description",
+          "description": "This section assesses if the course uses language and media elements that are based on the leading principles of sustainable development for education and training. Please mark yes if the statement is true for your content.",
           "weightage": 0,
           "max_score": 0,
           "min_acceptable_score": 0,
           "qualifiers": [
             {
               "qualifier": "Sustainable_Development_001",
-              "description": "The course/content conserve the integrity of ecosystems and biodiversity , promote sustainable management and use of natural resources.",
+              "description": "The course conserves the integrity of ecosystems and biodiversity, and promotes sustainable management and use of natural resources.",
               "weightage": 0,
               "max_score": 0,
               "min_acceptable_score": 0,
               "fixed_score": {
                 "Yes": 0,
+                "No": 0,
                 "Not Applicable": 0
               },
               "range_score": {
@@ -361,18 +393,25 @@
                   "name": "Yes"
                 },
                 {
+                  "name": "No"
+                },
+                {
                   "name": "Not Applicable"
                 }
+              ],
+              "disqualifyOption": [
+                "No"
               ]
             },
             {
               "qualifier": "Sustainable_Development_002",
-              "description": "The course/content addresses risk of climate change impact and disasters, integrates climate change adaptation considerations and does not exacerbate vulnerability of communities to climate change impacts or disaster risks.",
+              "description": "The course addresses the risks of climate change impact and disasters, integrates climate change adaptation considerations, and does not exacerbate the vulnerability of communities to climate change impacts or disaster risks.",
               "weightage": 0,
               "max_score": 0,
               "min_acceptable_score": 0,
               "fixed_score": {
                 "Yes": 0,
+                "No": 0,
                 "Not Applicable": 0
               },
               "range_score": {
@@ -387,18 +426,25 @@
                   "name": "Yes"
                 },
                 {
+                  "name": "No"
+                },
+                {
                   "name": "Not Applicable"
                 }
+              ],
+              "disqualifyOption": [
+                "No"
               ]
             },
             {
               "qualifier": "Sustainable_Development_003",
-              "description": "The course/content does not promote practices related to increased pollution, unsound chemicals & waste management, especially with respect to plastic waste, hazardous wastes, organic & ozone depleting pollutants.",
+              "description": "The course does not promote practices related to increased pollution, unsound chemicals and waste management – especially with respect to plastic waste, hazardous wastes, organic and ozone depleting pollutants.",
               "weightage": 0,
               "max_score": 0,
               "min_acceptable_score": 0,
               "fixed_score": {
                 "Yes": 0,
+                "No": 0,
                 "Not Applicable": 0
               },
               "range_score": {
@@ -413,8 +459,14 @@
                   "name": "Yes"
                 },
                 {
+                  "name": "No"
+                },
+                {
                   "name": "Not Applicable"
                 }
+              ],
+              "disqualifyOption": [
+                "No"
               ]
             },
             {
@@ -425,6 +477,7 @@
               "min_acceptable_score": 0,
               "fixed_score": {
                 "Yes": 0,
+                "No": 0,
                 "Not Applicable": 0
               },
               "range_score": {
@@ -439,8 +492,14 @@
                   "name": "Yes"
                 },
                 {
+                  "name": "No"
+                },
+                {
                   "name": "Not Applicable"
                 }
+              ],
+              "disqualifyOption": [
+                "No"
               ]
             },
             {
@@ -451,6 +510,7 @@
               "min_acceptable_score": 0,
               "fixed_score": {
                 "Yes": 0,
+                "No": 0,
                 "Not Applicable": 0
               },
               "range_score": {
@@ -465,8 +525,14 @@
                   "name": "Yes"
                 },
                 {
+                  "name": "No"
+                },
+                {
                   "name": "Not Applicable"
                 }
+              ],
+              "disqualifyOption": [
+                "No"
               ]
             },
             {
@@ -477,6 +543,7 @@
               "min_acceptable_score": 0,
               "fixed_score": {
                 "Yes": 0,
+                "No": 0,
                 "Not Applicable": 0
               },
               "range_score": {
@@ -491,8 +558,14 @@
                   "name": "Yes"
                 },
                 {
+                  "name": "No"
+                },
+                {
                   "name": "Not Applicable"
                 }
+              ],
+              "disqualifyOption": [
+                "No"
               ]
             },
             {
@@ -503,6 +576,7 @@
               "min_acceptable_score": 0,
               "fixed_score": {
                 "Yes": 0,
+                "No": 0,
                 "Not Applicable": 0
               },
               "range_score": {
@@ -517,18 +591,25 @@
                   "name": "Yes"
                 },
                 {
+                  "name": "No"
+                },
+                {
                   "name": "Not Applicable"
                 }
+              ],
+              "disqualifyOption": [
+                "No"
               ]
             },
             {
               "qualifier": "Sustainable_Development_008",
-              "description": "The course promotes friendly relations among nations, peaceful solutions, living together.",
+              "description": "The course promotes friendly relations among nations, peaceful solutions, and living together.",
               "weightage": 0,
               "max_score": 0,
               "min_acceptable_score": 0,
               "fixed_score": {
                 "Yes": 0,
+                "No": 0,
                 "Not Applicable": 0
               },
               "range_score": {
@@ -543,18 +624,25 @@
                   "name": "Yes"
                 },
                 {
+                  "name": "No"
+                },
+                {
                   "name": "Not Applicable"
                 }
+              ],
+              "disqualifyOption": [
+                "No"
               ]
             },
             {
               "qualifier": "Sustainable_Development_009",
-              "description": "The course does not promote/advance forms of violence including bullying, verbal abuse, gender-based violence and extremism.",
+              "description": "The course does not promote/advance any form of violence including (but not limited to) bullying, physical or verbal abuse, gender-based violence, and extremism.",
               "weightage": 0,
               "max_score": 0,
               "min_acceptable_score": 0,
               "fixed_score": {
                 "Yes": 0,
+                "No": 0,
                 "Not Applicable": 0
               },
               "range_score": {
@@ -569,18 +657,25 @@
                   "name": "Yes"
                 },
                 {
+                  "name": "No"
+                },
+                {
                   "name": "Not Applicable"
                 }
+              ],
+              "disqualifyOption": [
+                "No"
               ]
             },
             {
               "qualifier": "Sustainable_Development_010",
-              "description": "The course promotes/advances equality, inclusion and non-discrimination, for example by gender, caste, race, class, disability.",
+              "description": "The course promotes/advances equality, inclusion, and non-discrimination – for example by gender, caste, race, class, and disability.",
               "weightage": 0,
               "max_score": 0,
               "min_acceptable_score": 0,
               "fixed_score": {
                 "Yes": 0,
+                "No": 0,
                 "Not Applicable": 0
               },
               "range_score": {
@@ -595,18 +690,25 @@
                   "name": "Yes"
                 },
                 {
+                  "name": "No"
+                },
+                {
                   "name": "Not Applicable"
                 }
+              ],
+              "disqualifyOption": [
+                "No"
               ]
             },
             {
               "qualifier": "Sustainable_Development_011",
-              "description": "The course does not include working children under the legal age of 18 years.",
+              "description": "The course does not depict working children under the legal age of 18 years.",
               "weightage": 0,
               "max_score": 0,
               "min_acceptable_score": 0,
               "fixed_score": {
                 "Yes": 0,
+                "No": 0,
                 "Not Applicable": 0
               },
               "range_score": {
@@ -621,8 +723,14 @@
                   "name": "Yes"
                 },
                 {
+                  "name": "No"
+                },
+                {
                   "name": "Not Applicable"
                 }
+              ],
+              "disqualifyOption": [
+                "No"
               ]
             },
             {
@@ -633,6 +741,7 @@
               "min_acceptable_score": 0,
               "fixed_score": {
                 "Yes": 0,
+                "No": 0,
                 "Not Applicable": 0
               },
               "range_score": {
@@ -647,18 +756,25 @@
                   "name": "Yes"
                 },
                 {
+                  "name": "No"
+                },
+                {
                   "name": "Not Applicable"
                 }
+              ],
+              "disqualifyOption": [
+                "No"
               ]
             },
             {
               "qualifier": "Sustainable_Development_013",
-              "description": "The course promotes occupation health and safety standards with special focus on women workers, young workers, migrant workers and workers with disabilities.",
+              "description": "The course promotes occupational health and safety standards with a special focus on female workers, young workers, migrant workers and workers with disabilities.",
               "weightage": 0,
               "max_score": 0,
               "min_acceptable_score": 0,
               "fixed_score": {
                 "Yes": 0,
+                "No": 0,
                 "Not Applicable": 0
               },
               "range_score": {
@@ -673,8 +789,14 @@
                   "name": "Yes"
                 },
                 {
+                  "name": "No"
+                },
+                {
                   "name": "Not Applicable"
                 }
+              ],
+              "disqualifyOption": [
+                "No"
               ]
             },
             {
@@ -685,6 +807,7 @@
               "min_acceptable_score": 0,
               "fixed_score": {
                 "Yes": 0,
+                "No": 0,
                 "Not Applicable": 0
               },
               "range_score": {
@@ -699,18 +822,25 @@
                   "name": "Yes"
                 },
                 {
+                  "name": "No"
+                },
+                {
                   "name": "Not Applicable"
                 }
+              ],
+              "disqualifyOption": [
+                "No"
               ]
             },
             {
               "qualifier": "Sustainable_Development_015",
-              "description": "The course does not adversely affect International or intercultural understanding, solidarity and cooperation.",
+              "description": "The course does not adversely affect international or intercultural understanding, solidarity and cooperation.",
               "weightage": 0,
               "max_score": 0,
               "min_acceptable_score": 0,
               "fixed_score": {
                 "Yes": 0,
+                "No": 0,
                 "Not Applicable": 0
               },
               "range_score": {
@@ -725,8 +855,14 @@
                   "name": "Yes"
                 },
                 {
+                  "name": "No"
+                },
+                {
                   "name": "Not Applicable"
                 }
+              ],
+              "disqualifyOption": [
+                "No"
               ]
             },
             {
@@ -737,6 +873,7 @@
               "min_acceptable_score": 0,
               "fixed_score": {
                 "Yes": 0,
+                "No": 0,
                 "Not Applicable": 0
               },
               "range_score": {
@@ -751,15 +888,21 @@
                   "name": "Yes"
                 },
                 {
+                  "name": "No"
+                },
+                {
                   "name": "Not Applicable"
                 }
+              ],
+              "disqualifyOption": [
+                "No"
               ]
             }
           ]
         },
         {
           "criteria": "Instructional Methods",
-          "description": "Instructional methods determine how effectively the stated competencies and skills are acquired",
+          "description": "This section evaluates if instructional methods are effectively utilised to acquire the stated competencies and skills. Please mark yes if the statement is true for your content.",
           "weightage": 0.25,
           "max_score": 65,
           "min_acceptable_score": 0,
@@ -804,15 +947,12 @@
                 },
                 {
                   "name": "No"
-                },
-                {
-                  "name": "Not Applicable"
                 }
               ]
             },
             {
               "qualifier": "Instructional_Methods_002",
-              "description": "Each learning session (module) contains at-least one ‘Watch’ element as defined in the WTDET content framework.",
+              "description": "Each module contains at least one ‘Watch’ element as defined in the WTDET content framework.",
               "weightage": 0.13,
               "max_score": 5,
               "min_acceptable_score": 2.5,
@@ -848,15 +988,12 @@
                 },
                 {
                   "name": "No"
-                },
-                {
-                  "name": "Not Applicable"
                 }
               ]
             },
             {
               "qualifier": "Instructional_Methods_003",
-              "description": "Each learning session (module) contains at-least one ‘Think’ element as defined in the WTDET content framework.",
+              "description": "Each module contains at least one ‘Think’ element as defined in the WTDET content framework.",
               "weightage": 0.13,
               "max_score": 5,
               "min_acceptable_score": 2.5,
@@ -892,15 +1029,12 @@
                 },
                 {
                   "name": "No"
-                },
-                {
-                  "name": "Not Applicable"
                 }
               ]
             },
             {
               "qualifier": "Instructional_Methods_004",
-              "description": "Each learning session (module) contains at-least one ‘Do’ element as defined in the WTDET content framework.",
+              "description": "Each module contains at least one ‘Do’ element as defined in the WTDET content framework.",
               "weightage": 0.13,
               "max_score": 5,
               "min_acceptable_score": 2.5,
@@ -936,15 +1070,12 @@
                 },
                 {
                   "name": "No"
-                },
-                {
-                  "name": "Not Applicable"
                 }
               ]
             },
             {
               "qualifier": "Instructional_Methods_005",
-              "description": "Each learning session (module) contains at-least one ‘Explore’ element as defined in the WTDET content framework.",
+              "description": "Each module contains at least one ‘Explore’ element as defined in the WTDET content framework.",
               "weightage": 0.13,
               "max_score": 5,
               "min_acceptable_score": 2.5,
@@ -980,15 +1111,12 @@
                 },
                 {
                   "name": "No"
-                },
-                {
-                  "name": "Not Applicable"
                 }
               ]
             },
             {
               "qualifier": "Instructional_Methods_006",
-              "description": "The course introduction is included as part of the course and states the learning objective and intended audience at the beginning of the course",
+              "description": "The course introduction is included as part of the course, and states the learning objectives and intended audience at the beginning of the course.",
               "weightage": 0.13,
               "max_score": 5,
               "min_acceptable_score": 2.5,
@@ -1024,9 +1152,6 @@
                 },
                 {
                   "name": "No"
-                },
-                {
-                  "name": "Not Applicable"
                 }
               ]
             },
@@ -1068,15 +1193,12 @@
                 },
                 {
                   "name": "No"
-                },
-                {
-                  "name": "Not Applicable"
                 }
               ]
             },
             {
               "qualifier": "Instructional_Methods_008",
-              "description": "The course employs a variety of multimedia tools as necessary, appropriate to the content and target group.",
+              "description": "The course employs a variety of multimedia tools as necessary,which appropriate for the content and target group.",
               "weightage": 0.13,
               "max_score": 5,
               "min_acceptable_score": 2.5,
@@ -1112,9 +1234,6 @@
                 },
                 {
                   "name": "No"
-                },
-                {
-                  "name": "Not Applicable"
                 }
               ]
             },
@@ -1156,15 +1275,12 @@
                 },
                 {
                   "name": "No"
-                },
-                {
-                  "name": "Not Applicable"
                 }
               ]
             },
             {
               "qualifier": "Instructional_Methods_010",
-              "description": "All practice activities (Think elements) provide diagnostic feedback. i.e. In case a user attempts the question incorrectly/correctly, it provides them with a descriptive feedback",
+              "description": "All practice activities (‘Think’ elements) provide diagnostic feedback i.e. when a learner answers a question (whether incorrectly or correctly), the system provides them with descriptive feedback.",
               "weightage": 0.13,
               "max_score": 5,
               "min_acceptable_score": 2.5,
@@ -1200,15 +1316,12 @@
                 },
                 {
                   "name": "No"
-                },
-                {
-                  "name": "Not Applicable"
                 }
               ]
             },
             {
               "qualifier": "Instructional_Methods_011",
-              "description": "There is at least one active learning activity, such as online discussion/ debate, group project, synchronous online meeting, case study or a learning game per CBP.",
+              "description": "There is at least one active learning activity - such as online discussion/ debate, group project, synchronous online meeting, case study or a learning game - per course.",
               "weightage": 0.13,
               "max_score": 5,
               "min_acceptable_score": 2.5,
@@ -1288,9 +1401,6 @@
                 },
                 {
                   "name": "No"
-                },
-                {
-                  "name": "Not Applicable"
                 }
               ]
             },
@@ -1332,9 +1442,6 @@
                 },
                 {
                   "name": "No"
-                },
-                {
-                  "name": "Not Applicable"
                 }
               ]
             }
@@ -1342,7 +1449,7 @@
         },
         {
           "criteria": "Assessment Design",
-          "description": "Assessment Design Description",
+          "description": "This section evaluates the assessment design. Good assessment design includes testing target competencies and skills readiness. Please mark yes if the statement is true for your content.",
           "weightage": 0.2,
           "max_score": 45,
           "min_acceptable_score": 0,
@@ -1351,7 +1458,7 @@
           "qualifiers": [
             {
               "qualifier": "Assessment_Design_001",
-              "description": "The course features a post-assessment with clear instructions on evaluation.",
+              "description": "The course features a summative assessment (i.e. end-of-course assessment, the ‘Test’ as defined in the WTDET content framework) with clear instructions on evaluation.",
               "weightage": 0.09,
               "max_score": 5,
               "min_acceptable_score": 2.5,
@@ -1387,15 +1494,12 @@
                 },
                 {
                   "name": "No"
-                },
-                {
-                  "name": "Not Applicable"
                 }
               ]
             },
             {
               "qualifier": "Assessment_Design_002",
-              "description": "Passing criteria is clearly stated for the assessment.",
+              "description": "The criteria for passing the course are clearly stated in the assessment.",
               "weightage": 0.09,
               "max_score": 5,
               "min_acceptable_score": 2.5,
@@ -1431,15 +1535,12 @@
                 },
                 {
                   "name": "No"
-                },
-                {
-                  "name": "Not Applicable"
                 }
               ]
             },
             {
               "qualifier": "Assessment_Design_003",
-              "description": "The learning activities and assessment are consistent with learning outcome",
+              "description": "The learning activities and assessment are consistent with the learning outcomes of the course.",
               "weightage": 0.09,
               "max_score": 5,
               "min_acceptable_score": 2.5,
@@ -1475,15 +1576,12 @@
                 },
                 {
                   "name": "No"
-                },
-                {
-                  "name": "Not Applicable"
                 }
               ]
             },
             {
               "qualifier": "Assessment_Design_004",
-              "description": "Answer options for multiple choice questions, or distractors, are realistic, i.e. learners cannot guess the correct answer by easily eliminating incorrect ones. There should be only one correct answer to MCQs, and that explanations are provided for each right and wrong answer.",
+              "description": "The answer options for multiple choice questions, or distractors, are realistic i.e. learners cannot guess the correct answer by easily eliminating incorrect ones. ",
               "weightage": 0.09,
               "max_score": 5,
               "min_acceptable_score": 2.5,
@@ -1519,9 +1617,6 @@
                 },
                 {
                   "name": "No"
-                },
-                {
-                  "name": "Not Applicable"
                 }
               ]
             },
@@ -1563,9 +1658,6 @@
                 },
                 {
                   "name": "No"
-                },
-                {
-                  "name": "Not Applicable"
                 }
               ]
             },
@@ -1607,9 +1699,6 @@
                 },
                 {
                   "name": "No"
-                },
-                {
-                  "name": "Not Applicable"
                 }
               ]
             },
@@ -1651,9 +1740,6 @@
                 },
                 {
                   "name": "No"
-                },
-                {
-                  "name": "Not Applicable"
                 }
               ]
             },
@@ -1695,9 +1781,6 @@
                 },
                 {
                   "name": "No"
-                },
-                {
-                  "name": "Not Applicable"
                 }
               ]
             },
@@ -1739,9 +1822,6 @@
                 },
                 {
                   "name": "No"
-                },
-                {
-                  "name": "Not Applicable"
                 }
               ]
             }
@@ -1749,7 +1829,7 @@
         },
         {
           "criteria": "Competency and Skills",
-          "description": "Competency and Skills Description",
+          "description": "The section assesses how the course helps learners achieve the stated competency and skill acquisition goals. Please mark yes if the statement is true for your content.",
           "weightage": 0.2,
           "max_score": 15,
           "min_acceptable_score": 0,
@@ -1758,7 +1838,7 @@
           "qualifiers": [
             {
               "qualifier": "Competency-And_Skills_001",
-              "description": "Target competencies are clearly stated at the beginning of the course.",
+              "description": "All target competencies are clearly stated at the beginning of the course.",
               "weightage": 0.09,
               "max_score": 5,
               "min_acceptable_score": 2.5,
@@ -1794,9 +1874,6 @@
                 },
                 {
                   "name": "No"
-                },
-                {
-                  "name": "Not Applicable"
                 }
               ]
             },
@@ -1838,15 +1915,12 @@
                 },
                 {
                   "name": "No"
-                },
-                {
-                  "name": "Not Applicable"
                 }
               ]
             },
             {
               "qualifier": "Competency-And_Skills_003",
-              "description": "Target competencies have been covered in the course using real-life scenarios.",
+              "description": "All target competencies have been covered in the course using real-life scenarios.",
               "weightage": 0.09,
               "max_score": 5,
               "min_acceptable_score": 2.5,
@@ -1882,9 +1956,6 @@
                 },
                 {
                   "name": "No"
-                },
-                {
-                  "name": "Not Applicable"
                 }
               ]
             }
@@ -1892,7 +1963,7 @@
         },
         {
           "criteria": "Learner Engagement",
-          "description": "Learner Engagement Description",
+          "description": "This section will evaluate learner engagement for the course. These include specific techniques (such as real-life examples) to deepen learner engagement with the learning material. Please mark yes if the statement is true for your content.",
           "weightage": 0.15,
           "max_score": 30,
           "min_acceptable_score": 0,
@@ -1937,15 +2008,12 @@
                 },
                 {
                   "name": "No"
-                },
-                {
-                  "name": "Not Applicable"
                 }
               ]
             },
             {
               "qualifier": "Learner_Engagement_002",
-              "description": "The technical quality of all media is good, i.e. videos and audios play with no distortion.",
+              "description": "The technical quality of all media is good i.e. videos and audios play with no distortion.",
               "weightage": 0.09,
               "max_score": 5,
               "min_acceptable_score": 2.5,
@@ -1981,15 +2049,12 @@
                 },
                 {
                   "name": "No"
-                },
-                {
-                  "name": "Not Applicable"
                 }
               ]
             },
             {
               "qualifier": "Learner_Engagement_003",
-              "description": "Reading content (e.g. PDF, slides) is designed for on-the-go consumption and contains visual summaries, infographics and other similar techniques.",
+              "description": "The reading content (e.g. PDFs, slides) is designed for on-the-go consumption, and contains visual summaries, infographics and other simila.",
               "weightage": 0.09,
               "max_score": 5,
               "min_acceptable_score": 2.5,
@@ -2069,9 +2134,6 @@
                 },
                 {
                   "name": "No"
-                },
-                {
-                  "name": "Not Applicable"
                 }
               ]
             },
@@ -2113,9 +2175,6 @@
                 },
                 {
                   "name": "No"
-                },
-                {
-                  "name": "Not Applicable"
                 }
               ]
             },
@@ -2157,9 +2216,6 @@
                 },
                 {
                   "name": "No"
-                },
-                {
-                  "name": "Not Applicable"
                 }
               ]
             }
@@ -2167,7 +2223,7 @@
         },
         {
           "criteria": "Diversity & Inclusion",
-          "description": "Diversity & Inclusion Description",
+          "description": "This section evaluates the diversity and inclusion component of the course – including how the course uses language and media elements that are inclusive and feature diversity in gender, race and religion, and if the course is accessible to differently-abled learners. Please mark yes if the statement is true for your content.",
           "weightage": 0.15,
           "max_score": 100,
           "min_acceptable_score": 0,
@@ -2264,7 +2320,7 @@
             },
             {
               "qualifier": "Diversity_Inclusion_003",
-              "description": "Hyperlinks in the course connect to the correct location and all of them are descriptively titled (not using phrases as “Click here”), underlined, and a different colour.",
+              "description": "Hyperlinks in the course connect to the correct location, and all of them are descriptively titled (not using phrases as “Click here”), underlined, and in a different colour.",
               "weightage": 0.5,
               "max_score": 5,
               "min_acceptable_score": 2.5,
@@ -2308,7 +2364,7 @@
             },
             {
               "qualifier": "Diversity_Inclusion_004",
-              "description": "Course provides alternative activities to replace drag-and-drop ones by using a matching activity with typing the correct number or letter.",
+              "description": "The course provides alternative activities to replace drag-and-drop ones by using a matching activity with typing the correct number or letter.",
               "weightage": 0.5,
               "max_score": 5,
               "min_acceptable_score": 2.5,
@@ -2352,7 +2408,7 @@
             },
             {
               "qualifier": "Diversity_Inclusion_005",
-              "description": "Course uses appropriate font size and type, which is adjustable and conforms to all the required standards. (Please refer to document for standards).",
+              "description": "The course uses appropriate font size and type, which is adjustable and conforms to standards of World Wide Web Consortium.",
               "weightage": 0.5,
               "max_score": 5,
               "min_acceptable_score": 2.5,
@@ -2484,7 +2540,7 @@
             },
             {
               "qualifier": "Diversity_Inclusion_008",
-              "description": "Colour schemes used are colour-blind-friendly (Please see W3C standards) and contrast is used in choosing colour combinations.",
+              "description": "Colour schemes used are colour-blind-friendly (please see the W3C standards) and contrast is used in choosing colour combinations.",
               "weightage": 0.5,
               "max_score": 5,
               "min_acceptable_score": 2.5,
@@ -2616,7 +2672,7 @@
             },
             {
               "qualifier": "Diversity_Inclusion_011",
-              "description": "The course features diversity in gender",
+              "description": "The course features diversity in gender.",
               "weightage": 0.5,
               "max_score": 5,
               "min_acceptable_score": 2.5,
@@ -2660,7 +2716,7 @@
             },
             {
               "qualifier": "Diversity_Inclusion_012",
-              "description": "The course/content does not showcase disparity or discrimination among genders (male, female, third gender).  The course is gender intentional/ gender transformative",
+              "description": "The course does not showcase disparity or discrimination among genders (male, female, third gender). The course is gender intentional/ gender transformative.",
               "weightage": 0.5,
               "max_score": 5,
               "min_acceptable_score": 2.5,
@@ -2704,7 +2760,7 @@
             },
             {
               "qualifier": "Diversity_Inclusion_013",
-              "description": "The course uses language that is gender inclusive, e.g. use of 'they' in favour of 'he' (with appropriate change to sentence structures).",
+              "description": "The course uses language that is gender inclusive e.g. use of 'they' in favour of 'he' (with appropriate change to sentence structures).",
               "weightage": 0.5,
               "max_score": 5,
               "min_acceptable_score": 2.5,
@@ -2748,7 +2804,7 @@
             },
             {
               "qualifier": "Diversity_Inclusion_014",
-              "description": "The course/content provided a good overview of gender disparities/gaps in the health and education sector",
+              "description": "The course provides a good overview of gender disparities/gaps in the health and education sector.",
               "weightage": 0.5,
               "max_score": 5,
               "min_acceptable_score": 2.5,
@@ -2792,7 +2848,7 @@
             },
             {
               "qualifier": "Diversity_Inclusion_015",
-              "description": "The course/content was able to provide adequate information related to gender budgeting/planning exercises",
+              "description": "The course provides adequate information related to gender budgeting/planning exercises.",
               "weightage": 0.5,
               "max_score": 5,
               "min_acceptable_score": 2.5,
@@ -2836,7 +2892,7 @@
             },
             {
               "qualifier": "Diversity_Inclusion_016",
-              "description": "The course was able to effectively transmit information regarding existing gaps in female labor force participation and relevant policy options.",
+              "description": "The course effectively transmits information regarding existing gaps in female labor force participation and relevant policy options.",
               "weightage": 0.5,
               "max_score": 5,
               "min_acceptable_score": 2.5,
@@ -2880,7 +2936,7 @@
             },
             {
               "qualifier": "Diversity_Inclusion_017",
-              "description": "The course was able to provide adequate information to carry out administrative decisions to enhance women’s safety and violence prevention",
+              "description": "The course provides adequate information to carry out administrative decisions to enhance women’s safety and violence prevention.",
               "weightage": 0.5,
               "max_score": 5,
               "min_acceptable_score": 2.5,
@@ -2924,7 +2980,7 @@
             },
             {
               "qualifier": "Diversity_Inclusion_018",
-              "description": "The course was able to provide comprehensive information issues of the girl child and women in India",
+              "description": "The course provides comprehensive information issues of the girl child and women in India.",
               "weightage": 0.5,
               "max_score": 5,
               "min_acceptable_score": 2.5,
@@ -2968,7 +3024,7 @@
             },
             {
               "qualifier": "Diversity_Inclusion_019",
-              "description": "Courses developed are multilingual and available in multiple official languages.",
+              "description": "The course is multilingual and available in multiple official languages.",
               "weightage": 0.5,
               "max_score": 5,
               "min_acceptable_score": 2.5,
@@ -3012,7 +3068,7 @@
             },
             {
               "qualifier": "Diversity_Inclusion_020",
-              "description": "Human characters used in the course belong to the context that is being portrayed, e.g. use of Indian characters in Indian contexts and situations and use of international characters where the situation demands.",
+              "description": "Human characters used in the course belong to the context that is being portrayed e.g. use of Indian characters in Indian contexts and situations, and use of international characters where the situation demands.",
               "weightage": 0.5,
               "max_score": 5,
               "min_acceptable_score": 2.5,
@@ -3058,7 +3114,7 @@
         },
         {
           "criteria": "Learner Support",
-          "description": "Learner Support Description",
+          "description": "This section evaluates the resources included with the course, to see if they extend learning and enhance the asynchronous learning experience. Please mark yes if the statement is true for your content.",
           "weightage": 0.05,
           "max_score": 25,
           "min_acceptable_score": 0,
@@ -3067,7 +3123,7 @@
           "qualifiers": [
             {
               "qualifier": "Learner_Support_001",
-              "description": "Learners are able to download courses and complete in offline mode (e.g. Course avoids using YouTube links/ external to videos).",
+              "description": "Learners are able to download courses and complete the course offline (e.g. the course avoids using YouTube/ external links to videos).",
               "weightage": 0.5,
               "max_score": 5,
               "min_acceptable_score": 2.5,
@@ -3147,9 +3203,6 @@
                 },
                 {
                   "name": "No"
-                },
-                {
-                  "name": "Not Applicable"
                 }
               ]
             },
@@ -3191,9 +3244,6 @@
                 },
                 {
                   "name": "No"
-                },
-                {
-                  "name": "Not Applicable"
                 }
               ]
             },
@@ -3235,9 +3285,6 @@
                 },
                 {
                   "name": "No"
-                },
-                {
-                  "name": "Not Applicable"
                 }
               ]
             },
@@ -3279,9 +3326,6 @@
                 },
                 {
                   "name": "No"
-                },
-                {
-                  "name": "Not Applicable"
                 }
               ]
             }
