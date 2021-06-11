@@ -52,6 +52,8 @@ public class EvaluatorModel {
 
     private String timeStamp;
 
+    private String versionKey;
+
     public String getIdentifier() {
         return identifier;
     }
@@ -242,5 +244,13 @@ public class EvaluatorModel {
 
     public void setQualified(boolean qualified) {
         isQualified = qualified;
+    }
+
+    public String getVersionKey() {
+        return versionKey;
+    }
+
+    public void setVersionKey(String versionKey) {
+        this.versionKey = versionKey;
     }
 }
