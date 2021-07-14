@@ -16,7 +16,7 @@ import org.sunbird.scoringengine.models.Response;
 import org.sunbird.scoringengine.service.ScoringEngineService;
 
 @RestController
-@RequestMapping("/action/scoring")
+@RequestMapping("/v1")
 public class ScoringController {
 
     @Autowired
