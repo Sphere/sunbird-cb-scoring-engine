@@ -92,18 +92,18 @@
         {
           "criteria": "Area-Content Quality",
           "description": "",
-          "weightage": 0,
-          "max_score": 0,
+          "weightage": 0.34,
+          "max_score": 95,
           "min_acceptable_score": 0,
           "qualifiers": [
             {
               "qualifier": "Area-Content Quality_001",
               "description": "1. Content is current and is not dated in its content, language, or visuals in a way that reduces its educational value.",
               "weightage": 0,
-              "max_score": 0,
+              "max_score": 5,
               "min_acceptable_score": 0,
               "fixed_score": {
-                "Yes": 0,
+                "Yes": 5,
                 "No": 0
               },
               "range_score": {
@@ -127,10 +127,10 @@
               "qualifier": "Area-Content Quality_002",
               "description": "2. Content is accurate and no outdated information, factual errors, improper use of statistics, inaccurate graphs or displays exist.",
               "weightage": 0,
-              "max_score": 0,
+              "max_score": 5,
               "min_acceptable_score": 0,
               "fixed_score": {
-                "Yes": 0,
+                "Yes": 5,
                 "No": 0
               },
               "range_score": {
@@ -154,10 +154,10 @@
               "qualifier": "Area-Content Quality_003",
               "description": "3. No invalid or oversimplified models, examples, simulations, errors in spelling or grammar exist.",
               "weightage": 0,
-              "max_score": 0,
+              "max_score": 5,
               "min_acceptable_score": 0,
               "fixed_score": {
-                "Yes": 0,
+                "Yes": 5,
                 "No": 0
               },
               "range_score": {
@@ -181,10 +181,10 @@
               "qualifier": "Area-Content Quality_004",
               "description": "4. Scope (range) and depth of topics are appropriate to learner needs. Treatment of topics satisfies learning outcomes, and is at an appropriate level of detail.",
               "weightage": 0,
-              "max_score": 0,
+              "max_score": 5,
               "min_acceptable_score": 0,
               "fixed_score": {
-                "Yes": 0,
+                "Yes": 5,
                 "No": 0
               },
               "range_score": {
@@ -208,10 +208,10 @@
               "qualifier": "Area-Content Quality_005",
               "description": "5. The level of difficulty is appropriate for the intended audience ",
               "weightage": 0,
-              "max_score": 0,
+              "max_score": 5,
               "min_acceptable_score": 0,
               "fixed_score": {
-                "Yes": 0,
+                "Yes": 5,
                 "No": 0,
                 "Not Applicable": 0
               },
@@ -239,10 +239,10 @@
               "qualifier": "Area-Content Quality_006",
               "description": "6. Graphic illustrations, such as photographs and realistic drawings, are suitable for the maturity, age, and/or developmental level of the learner ",
               "weightage": 0,
-              "max_score": 0,
+              "max_score": 5,
               "min_acceptable_score": 0,
               "fixed_score": {
-                "Yes": 0,
+                "Yes": 5,
                 "No": 0
               },
               "range_score": {
@@ -266,10 +266,10 @@
               "qualifier": "Area-Content Quality_007",
               "description": "7. Resources that require learner response, the method of response is appropriate (e.g., multiple choice, single keystroke, manipulation of graphics).",
               "weightage": 0,
-              "max_score": 0,
+              "max_score": 5,
               "min_acceptable_score": 0,
               "fixed_score": {
-                "Yes": 0,
+                "Yes": 5,
                 "No": 0
               },
               "range_score": {
@@ -293,10 +293,10 @@
               "qualifier": "Area-Content Quality_008",
               "description": "8. Content integrates “real-world” experiences",
               "weightage": 0,
-              "max_score": 0,
+              "max_score": 5,
               "min_acceptable_score": 0,
               "fixed_score": {
-                "Yes": 0,
+                "Yes": 5,
                 "No": 0
               },
               "range_score": {
@@ -320,10 +320,10 @@
               "qualifier": "Area-Content Quality_009",
               "description": "9. Content layout is logical and consistent",
               "weightage": 0,
-              "max_score": 0,
+              "max_score": 5,
               "min_acceptable_score": 0,
               "fixed_score": {
-                "Yes": 0,
+                "Yes": 5,
                 "No": 0
               },
               "range_score": {
@@ -347,10 +347,10 @@
               "qualifier": "Area-Content Quality_010",
               "description": "10. Content reflects sensitivity to gender and sexual orientation",
               "weightage": 0,
-              "max_score": 0,
+              "max_score": 5,
               "min_acceptable_score": 0,
               "fixed_score": {
-                "Yes": 0,
+                "Yes": 5,
                 "No": 0
               },
               "range_score": {
@@ -374,10 +374,10 @@
               "qualifier": "Area-Content Qualityt_011",
               "description": "11. Content promotes equality by enhancing students’ understanding of a multicultural and a diverse society.",
               "weightage": 0,
-              "max_score": 0,
+              "max_score": 5,
               "min_acceptable_score": 0,
               "fixed_score": {
-                "Yes": 0,
+                "Yes": 5,
                 "No": 0
               },
               "range_score": {
@@ -401,10 +401,10 @@
               "qualifier": "Area-Content Quality_012",
               "description": "12. Content is designed to motivate learners to examine their attitudes and   behaviors, and to comprehend their duties, responsibilities, rights, and privileges as participating citizens in our society",
               "weightage": 0,
-              "max_score": 0,
+              "max_score": 5,
               "min_acceptable_score": 0,
               "fixed_score": {
-                "Yes": 0,
+                "Yes": 5,
                 "No": 0
               },
               "range_score": {
@@ -428,10 +428,10 @@
               "qualifier": "Area-Content Quality_013",
               "description": "13. Content portrays positive role models ",
               "weightage": 0,
-              "max_score": 0,
+              "max_score": 5,
               "min_acceptable_score": 0,
               "fixed_score": {
-                "Yes": 0,
+                "Yes": 5,
                 "No": 0
               },
               "range_score": {
@@ -455,10 +455,10 @@
               "qualifier": "Area-Content Quality_014",
               "description": "14. Content uses language appropriate to the intended audience, and excludes slang, vernaculars, or expletives that detract from meaning",
               "weightage": 0,
-              "max_score": 0,
+              "max_score": 5,
               "min_acceptable_score": 0,
               "fixed_score": {
-                "Yes": 0,
+                "Yes": 5,
                 "No": 0
               },
               "range_score": {
@@ -482,10 +482,10 @@
               "qualifier": "Area-Content Quality_015",
               "description": "15. Content language is inclusive",
               "weightage": 0,
-              "max_score": 0,
+              "max_score": 5,
               "min_acceptable_score": 0,
               "fixed_score": {
-                "Yes": 0,
+                "Yes": 5,
                 "No": 0
               },
               "range_score": {
@@ -508,11 +508,11 @@
             {
               "qualifier": "Area-Content Quality_016",
               "description": "16. Content reflects balanced images and information about males and females and support broad choices and many roles for both sexes",
-              "weightage": 0,
+              "weightage": 5,
               "max_score": 0,
               "min_acceptable_score": 0,
               "fixed_score": {
-                "Yes": 0,
+                "Yes": 5,
                 "No": 0
               },
               "range_score": {
@@ -535,11 +535,11 @@
             {
               "qualifier": "Area-Content Quality_017",
               "description": "17. Content uses language that features controlled vocabulary, clear sentence structure and logical and clear development of main ideas supported by relevant details.",
-              "weightage": 0,
+              "weightage": 5,
               "max_score": 0,
               "min_acceptable_score": 0,
               "fixed_score": {
-                "Yes": 0,
+                "Yes": 5,
                 "No": 0
               },
               "range_score": {
@@ -563,10 +563,10 @@
               "qualifier": "Area-Content Qualityt_018",
               "description": "18. Comprehension is aided by graphics that support, enhance, and re-explain main ideas.",
               "weightage": 0,
-              "max_score": 0,
+              "max_score": 5,
               "min_acceptable_score": 0,
               "fixed_score": {
-                "Yes": 0,
+                "Yes": 5,
                 "No": 0
               },
               "range_score": {
@@ -590,10 +590,10 @@
               "qualifier": "Area-Content Quality_019",
               "description": "19. Content graphics are located near relevant text.",
               "weightage": 0,
-              "max_score": 0,
+              "max_score": 5,
               "min_acceptable_score": 0,
               "fixed_score": {
-                "Yes": 0,
+                "Yes": 5,
                 "No": 0
               },
               "range_score": {
@@ -618,18 +618,18 @@
         {
           "criteria": "Area-Instructional Design",
           "description": "",
-          "weightage": 0,
-          "max_score": 0,
+          "weightage": 0.33,
+          "max_score": 75,
           "min_acceptable_score": 0,
           "qualifiers": [
             {
               "qualifier": "Area-Instructional Design_001",
               "description": "1. Instructional goals and learner objectives are clearly stated",
               "weightage": 0,
-              "max_score": 0,
+              "max_score": 5,
               "min_acceptable_score": 0,
               "fixed_score": {
-                "Yes": 0,
+                "Yes": 5,
                 "No": 0,
                 "Not Applicable": 0
               },
@@ -657,10 +657,10 @@
               "qualifier": "Area-Instructional Design_002",
               "description": "2. Resource promotes student engagement (Questions encourage reflection. Questions and activities within the resource should attract attention and increase understanding)",
               "weightage": 0,
-              "max_score": 0,
+              "max_score": 5,
               "min_acceptable_score": 0,
               "fixed_score": {
-                "Yes": 0,
+                "Yes": 5,
                 "No": 0,
                 "Not Applicable": 0
               },
@@ -688,10 +688,10 @@
               "qualifier": "Area-Instructional Design_003",
               "description": "3. The methodology promotes active learning like critical thinking, problem solving, decision making, etc.",
               "weightage": 0,
-              "max_score": 0,
+              "max_score": 5,
               "min_acceptable_score": 0,
               "fixed_score": {
-                "Yes": 0,
+                "Yes": 5,
                 "No": 0,
                 "Not Applicable": 0
               },
@@ -719,10 +719,10 @@
               "qualifier": "Area-Instructional Design_004",
               "description": "4. Materials are well organized and structured",
               "weightage": 0,
-              "max_score": 0,
+              "max_score": 5,
               "min_acceptable_score": 0,
               "fixed_score": {
-                "Yes": 0,
+                "Yes": 5,
                 "No": 0,
                 "Not Applicable": 0
               },
@@ -750,10 +750,10 @@
               "qualifier": "Area-Instructional Design_005",
               "description": "5. Table of content indicates consistency in approach to topics, units, etc.",
               "weightage": 0,
-              "max_score": 0,
+              "max_score": 5,
               "min_acceptable_score": 0,
               "fixed_score": {
-                "Yes": 0,
+                "Yes": 5,
                 "No": 0,
                 "Not Applicable": 0
               },
@@ -781,10 +781,10 @@
               "qualifier": "Area-Instructional Design_006",
               "description": "6. Components, including overview charts, graphics, and other visual organizers are available appropriately",
               "weightage": 0,
-              "max_score": 0,
+              "max_score": 5,
               "min_acceptable_score": 0,
               "fixed_score": {
-                "Yes": 0,
+                "Yes": 5,
                 "No": 0,
                 "Not Applicable": 0
               },
@@ -812,10 +812,10 @@
               "qualifier": "Area-Instructional Design_007",
               "description": "7. Concepts are clearly introduced and the progression of the resource material is smooth and logical, with new concepts identified in a clear and consistent manner",
               "weightage": 0,
-              "max_score": 0,
+              "max_score": 5,
               "min_acceptable_score": 0,
               "fixed_score": {
-                "Yes": 0,
+                "Yes": 5,
                 "No": 0,
                 "Not Applicable": 0
               },
@@ -843,10 +843,10 @@
               "qualifier": "Area-Instructional Design_008",
               "description": "8. Concepts are clearly developed",
               "weightage": 0,
-              "max_score": 0,
+              "max_score": 5,
               "min_acceptable_score": 0,
               "fixed_score": {
-                "Yes": 0,
+                "Yes": 5,
                 "No": 0,
                 "Not Applicable": 0
               },
@@ -874,10 +874,10 @@
               "qualifier": "Area-Instructional Design_009",
               "description": "9. Definitions, explanations, illustrations, and examples are available where necessary and are relevant to the point under discussion.",
               "weightage": 0,
-              "max_score": 0,
+              "max_score": 5,
               "min_acceptable_score": 0,
               "fixed_score": {
-                "Yes": 0,
+                "Yes": 5,
                 "No": 0,
                 "Not Applicable": 0
               },
@@ -905,10 +905,10 @@
               "qualifier": "Area-Instructional Design_010",
               "description": "10. Examples, as well as non-examples or counter examples are provided (e.g., a bear, not a bear).",
               "weightage": 0,
-              "max_score": 0,
+              "max_score": 5,
               "min_acceptable_score": 0,
               "fixed_score": {
-                "Yes": 0,
+                "Yes": 5,
                 "No": 0,
                 "Not Applicable": 0
               },
@@ -936,10 +936,10 @@
               "qualifier": "Area-Instructional Design_011",
               "description": "11. Concepts are clearly summarized  (a post-lesson quiz)",
               "weightage": 0,
-              "max_score": 0,
+              "max_score": 5,
               "min_acceptable_score": 0,
               "fixed_score": {
-                "Yes": 0,
+                "Yes": 5,
                 "No": 0,
                 "Not Applicable": 0
               },
@@ -967,10 +967,10 @@
               "qualifier": "Area-Instructional Design_012",
               "description": "12. Non-technical vocabulary is appropriate (sentence complexity, the use of idiom and dialect, etc.) ",
               "weightage": 0,
-              "max_score": 0,
+              "max_score": 5,
               "min_acceptable_score": 0,
               "fixed_score": {
-                "Yes": 0,
+                "Yes": 5,
                 "No": 0,
                 "Not Applicable": 0
               },
@@ -998,10 +998,10 @@
               "qualifier": "Area-Instructional Design_013",
               "description": "13. Adequate/appropriate assessment/evaluation tools are provided and the resource contains tools to assess ongoing achievement relative to the program’s objectives",
               "weightage": 0,
-              "max_score": 0,
+              "max_score": 5,
               "min_acceptable_score": 0,
               "fixed_score": {
-                "Yes": 0,
+                "Yes": 5,
                 "No": 0,
                 "Not Applicable": 0
               },
@@ -1029,10 +1029,10 @@
               "qualifier": "Area-Instructional Design_014",
               "description": "14. Pedagogy is innovative and the resource demonstrates a fresh approach. Imagery, layout, presentation, pace, topics, suggested activities, and instructional design all serve to promote student interest in the content",
               "weightage": 0,
-              "max_score": 0,
+              "max_score": 5,
               "min_acceptable_score": 0,
               "fixed_score": {
-                "Yes": 0,
+                "Yes": 5,
                 "No": 0,
                 "Not Applicable": 0
               },
@@ -1060,10 +1060,10 @@
               "qualifier": "Area-Instructional Design_015",
               "description": "15. Text relates to visuals. (Captions should be clear and relevant. Visuals should be placed to effectively support textual content and not interfere with reading or viewing)",
               "weightage": 0,
-              "max_score": 0,
+              "max_score": 5,
               "min_acceptable_score": 0,
               "fixed_score": {
-                "Yes": 0,
+                "Yes": 5,
                 "No": 0,
                 "Not Applicable": 0
               },
@@ -1092,7 +1092,7 @@
         {
           "criteria": "Area- Technical Design",
           "description": "",
-          "weightage": 0.25,
+          "weightage": 0.33,
           "max_score": 65,
           "min_acceptable_score": 0,
           "min_score_weightage_enable": true,
