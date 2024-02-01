@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.sunbird.scoringengine.comments.model.CommentsModel;
+import org.sunbird.scoringengine.comments.repository.CommentsRepository;
 import org.sunbird.scoringengine.models.EvaluatorModel;
 import org.sunbird.scoringengine.models.Response;
 import org.sunbird.scoringengine.service.ScoringEngineService;
@@ -21,6 +23,8 @@ public class ScoringController {
 
     @Autowired
     ScoringEngineService scoringEngineService;
+    @Autowired
+    CommentsRepository commentsRepository;
        
     @PostMapping("/add")
     public ResponseEntity<Response> add(@RequestBody EvaluatorModel evaluatorModel, @RequestHeader String rootOrg,
@@ -46,5 +50,11 @@ public class ScoringController {
 
     //CBP Comments Store API's
     
+    @PostMapping(value = "/comments/create")
+    public ResponseEntity <?> create(@RequestBody CommentsModel comments) {
+    	System.out.println(comments);
+    	CommentsModel commentsSaved = commentsRepository.save(comments);
+        return new ResponseEntity<>(commentsSaved, HttpStatus.OK);
+    }
    
 }
