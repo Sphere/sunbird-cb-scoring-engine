@@ -78,7 +78,7 @@ public class CommentsModel {
 	public CommentsModel() {
     }
     public CommentsModel(Long commentsId, String userId, String courseId, String role, String comments,
-			String currentStatus, String nextStatus, boolean readComments, LocalDateTime createdDate, LocalDateTime updatedDate) {
+			String currentStatus, String nextStatus, boolean readComments, LocalDateTime createdDate, LocalDateTime updatedDate,String username) {
 		this.commentsId = commentsId;
 		this.userId = userId;
 		this.courseId = courseId;
@@ -89,6 +89,7 @@ public class CommentsModel {
 		this.readComments = readComments;
 		this.createdDate = createdDate;
 		this.updatedDate = updatedDate;
+		this.username=username;
 	}
 
 	@Column(name = "userId")
@@ -117,4 +118,13 @@ public class CommentsModel {
 
     @Column(name = "updatedDate")
     private LocalDateTime updatedDate;
+    
+    @Column(name = "username")
+    private String username;
+	public String getUsername() {
+		return username;
+	}
+	public void setUsername(String username) {
+		this.username = username;
+	}
 }

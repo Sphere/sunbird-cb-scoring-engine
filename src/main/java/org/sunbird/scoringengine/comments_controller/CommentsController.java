@@ -3,6 +3,7 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Sort;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -34,9 +35,9 @@ public class CommentsController {
 	@GetMapping("/getall")
     public ResponseEntity<?> getcomments() {
         
-        List<CommentsModel> allComments = commentsRepository.findAll();
+		List<CommentsModel> allComments=commentsRepository.getAllComments();
 
-        return new ResponseEntity<Object>(allComments, HttpStatus.OK);
+		return new ResponseEntity<Object>(allComments, HttpStatus.OK);
     }
 	@GetMapping("/course")
     public ResponseEntity<?> getcommentsByCourseid(@RequestParam(name = "courseId") String Courseid) {

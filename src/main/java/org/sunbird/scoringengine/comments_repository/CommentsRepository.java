@@ -11,8 +11,10 @@ import org.sunbird.scoringengine.comments_model.CommentsModel;
 public interface CommentsRepository  extends JpaRepository<CommentsModel, Long>{
 
 	
-	@Query(value = "SELECT * FROM comments WHERE course_id=?1", nativeQuery = true)
+	@Query(value = "SELECT * FROM comments WHERE course_id=?1 order by updated_date desc NULLS LAST", nativeQuery = true)
 	List<CommentsModel> getCommentsByCourseid(String CourseID);
 	
+	@Query(value = "SELECT * FROM comments order by updated_date desc NULLS LAST", nativeQuery = true)
+	List<CommentsModel> getAllComments();
 	
 }
