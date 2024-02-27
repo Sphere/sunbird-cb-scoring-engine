@@ -17,7 +17,16 @@ public class QualifierModel {
     private double scoreValue;
     private String scoreRange;
     private String scoringType;
-    private List<HashMap<String, Object>> options = new ArrayList<>();
+    private String comment;
+    public String getComment() {
+		return comment;
+	}
+
+	public void setComment(String comment) {
+		this.comment = comment;
+	}
+
+	private List<HashMap<String, Object>> options = new ArrayList<>();
 
     public String getName() {
         return name;
